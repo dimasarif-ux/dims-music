@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #000000, #980404);
+    color: white;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #5d0000, #1a1a1a);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    height: 60px;   
+    border-bottom: 1px solid #333;;
+}
+
+.logoAtas {
+    display: flex;
+    align-items: center;
+}
+
+.logoAtas a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logoAtas img {
+    height: 90px;
+    width: 100px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+header h2 {
+    color: white;
+    margin-right: 45rem;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f54242;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #d1e0ff;
+    font-size: 2.5rem;
+}
+
+ol {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(90deg, #5d0000, #1a1a1a);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 10px;
+}
+ 
+.footer-about {
+    text-align: center;
+}
+
+.footer-about p {
+    width: 300px;
+}
+
+.footer-link {
+    text-align: center;
+}
+
+.footer-link ul li {
+    list-style: none;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.footer-link ul li a:hover {
+    cursor: pointer;
+    color: #f54242;
+    border-radius: 5px;
+}
+
+.footer-contact {
+    margin-right: 60px;
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+  }
+  
+.social-icons .icon {
+	border-radius: 0.125rem;
+	padding: 0.75rem;
+	border: none;
+	background-color: transparent;
+	margin-left: 8px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+  }
+
+/* Responsiveness */
+@media (max-width: 768px) {   
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        margin-left: 200px;
+    }
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        transition: 0.3s;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: linear-gradient(90deg, #000000, #5d0000);
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .footer-about, .footer-link, .footer-contact {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-about p {
+        width: auto;
+    }
+}
+
+main {
+    background: linear-gradient(to right, #000000, #980404);
+    text-align: center;
+    padding: 2rem;
+    color: #000000;
+}
+
+.welcome {
+    background: linear-gradient(to right, #980404, #000000);
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #eaeaea;
+    border-bottom: 2px solid #5d0000;
+}
+
+.welcome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f54242;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f0e6e6;
+}
+
+.welcome button {
+   padding: 10px 20px;
+   background: #f54242;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: transform 0.3s, background 0.3s;
+}
+
+.welcome button:hover {
+    background: #5d0000;
+    transform: scale(1.1);
+}
+
+.welcome .modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f54242;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.welcome .modal-content ol, h4 {
+    color: #000000;
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+.rainbow {
+    animation: rainbow 3s infinite;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+  .container_product {
+    background: linear-gradient(to bottom, #1a1a1a, #5d0000);
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #eaeaea;
+  }
+
+  .container_product h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f54242;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .container_product p {
+    margin-bottom: 5rem;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .product {
+    background: #1a1a1a;
+    border: 1px solid #f54242;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-between;
+  }
+  .product:hover {
+    font-weight: 100;
+    transition: 0.3s;
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    
+  }
+
+  .product img {
+    max-width: 50%;
+    border-bottom: 1px solid #f54242;
+    margin-top: 5px;
+  }
+  .product h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #f54242;
+    min-height: 50px;
+  }
+  .product p {
+    font-size: 1rem;
+    color: #eaeaea;
+    margin: 10px;
+  }
+
+  .product button {
+    padding: 10px 20px;
+    background: #f54242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease,  transform 0.3s ease;
+    margin-bottom: 5px;
+  }
+
+  .product button:hover {
+    background: #5d0000;
+    transform: scale(1.05);
+  }
+
+  .product a.order {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #7e7f80;
+    color: #fcf8f8;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .product a:hover {
+    background: #0056b3;
+ }
+
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent Black */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  .modal-content img {
+    max-width: 50%;
+}
+
+  .modal-content p {
+    color: #000000;
+  }
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+
+
+/* Halaman Transaksi Styling */
+#transaksi {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#transaksi h2 {
+    text-align: center;
+    color: #f54242;
+    margin-bottom: 20px;
+}
+
+#transaksi form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#transaksi label {
+    font-weight: bold;
+    color: #333;
+}
+
+#transaksi input {
+    padding: 10px;
+    border: 1px solid #980404;
+    border-radius: 4px;
+    font-size: 16px;
+    width: auto;
+}
+
+#transaksi button {
+    padding: 10px;
+    background-color: #f54242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input, form textarea, form button, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #980404;
+    border-radius: 10px;
+}
+ 
+#transaksi button:hover {
+    color: white;
+    background-color: #5d0000;
+}
+
+/* Responsiveness for Transaction Form */
+@media (max-width: 768px) {
+    #transaksi {
+        padding: 15px;
+    }
+
+    #transaksi h2 {
+        font-size: 18px;
+    }
+
+    #transaksi input,
+    #transaksi button {
+        font-size: 14px;
+    }
+}
+
+#credit-card-form {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#credit-card-form label {
+    display: block;
+    margin: 5px 0;
+}
+
+#credit-card-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#va_field, #qris_field {
+      padding: 10px;
+      background-color: #f1f1f1;
+      border: 1px dashed #ccc;
+      border-radius: 4px;
+      display: none;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    #barcode {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%;
+    }
+
+
+/* Styling Daftar Transaksi */
+#daftar-transaksi {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#daftar-transaksi h1 {
+    font-size: 2rem;
+    color: #d1e0ff;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    background: white;
+}
+
+table th {
+    background-color: #980404;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #d1e0ff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+#profil {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #d1e0ff;
+}
+
+#profil h1 {
+    font-size: 2.5rem;
+    color: #eaeaea;
+    margin-bottom: 20px;
+}
+
+#profil p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+#profil ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#profil ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    background-color: #f0f8ff;
+    border: 1px solid #980404;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000000;
+}
+
