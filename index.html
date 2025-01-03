@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <header>
+      <div class="logoAtas">
+        <a href="index.html">
+      <img src="img/logo-removebg-preview.png" alt="logo" class="logo">
+    </a>  
+    <div class="hamburger" onclick="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span> 
+    </div>
+    </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <div class="welcome">
+        <h1 class="rainbow">Selamat Datang Di Dims Music !</h1>
+        <p>Baca Panduan Di bawah ini untuk menggunakan website ini</p>
+        <button onclick="openModal('modalPanduan')">Panduan</button>
+        <!-- Modal untuk Panduan -->
+        <div id="modalPanduan" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modalPanduan')">&times;</span>
+            <h2>Panduan Awal Untuk Website Ini</h2>
+            <ol>
+              <li>Silahkan Login terlebih dahulu, jika tidak punya akun bisa Daftar Akun</li>
+              <li>Silahkan gunakan navigasi diatas untuk berpindah ke antar halaman</li>
+              <li>Bagian Beranda terdapat Produk dari Dims Music, Silahkan pilih produk yang Anda suka di halaman beranda ini yang sudah terdaftar</li>
+              <li>Klik <b>Pesan Sekarang</b> untuk melakukan proses transaksi</li>
+            </ol>
+            <h4>Enjoy Belanja nya !!!</h4>
+          </div>
+        </div>
+      </div>
+        <section id="produk">
+            <div class="container_product">
+              <h2>Produk Dims Music</h2>
+              <p>Temukan alat musik kesukaan Anda!</p>
+              <div class="product-list">
+                <div class="product">
+                  <img src="img/gitar/gitar_akustik/gitar_akustik2.jpeg" alt="Gitar Akustik">
+                  <h3>Yamaha Guitar Akustik Elektrik APX600</h3>
+                  <p>Rp. 2.952.000</p>
+                  <a class="order" href="transaksi.html?product=Yamaha%20Guitar%20Akustik%20Elektrik%20APX600&price=2952000">🛒 Pesan Sekarang</a>
+                  <button class="btn-sejarah" onclick="openModal('modalGitarAkustik')">Detail Produk</button>
+                </div>
+                <!-- Modal untuk Gitar Akustik -->
+                <div id="modalGitarAkustik" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modalGitarAkustik')">&times;</span>
+                    <h2>Tentang Produk ini</h2>
+                    <img src="img/gitar/gitar_akustik/gitar_akustik2.jpeg" alt="Gitar Akustik">
+                    <p>Sebagai salah satu gitar akustik-elektrik terlaris di dunia, seri APX600 memperkenalkan versi upgrade dengan bagian atas flame maple. Bodi bergaris tipis APX memadukan kenyamanan yang luar biasa, akses fret-atas yang mudah, dan nada akustik alami, menghasilkan kemampuan yang unggul pada APX600FM yang sangat cocok untuk pemain di atas panggung.</p>
+                  </div>
+                </div>
+        
+                <div class="product">
+                    <img src="img/gitar/gitar_elektrik/gitar_elektrik3.jpg" alt="Gitar Elektrik">
+                    <h3>Gibson Les Paul Classic Electric Guitar, Ebony</h3>
+                    <p>Rp. 38.335.000</p>
+                    <a class="order" href="transaksi.html?product=Gibson%20Les%20Paul%20Classic%20Elektric%20Guitar,%20Ebony&price=38335000">🛒 Pesan Sekarang</a>
+                    <button class="btn-sejarah" onclick="openModal('modalGitarElektrik')">Detail Produk</button>
+                </div>
+                <!-- Modal untuk Gitar Elektrik -->
+                <div id="modalGitarElektrik" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modalGitarElektrik')">&times;</span>
+                    <h2>Tentang Produk ini</h2>
+                    <img src="img/gitar/gitar_elektrik/gitar_elektrik3.jpg" alt="Gitar Elektrik">
+                    <p>Les Paul Classic bisa dibilang salah satu gitar paling menakjubkan namun bersahaja yang ditawarkan Gibson. Dengan hasil akhir yang abadi, ikatan krim yang berkelas, dan pickup Burstbucker zebra, instrumen ini akan menarik bagi pemain tradisionalis dan kontemporer. Harapkan nada ikonik, dan nuansa Gibson yang khas.</p>
+                    <img src="img/slash.jpg" alt="Slash Gun's N Roses">
+                    <p>Gitar Les Paul Classic ini juga memiliki sejarah ikonik karena digunakan oleh gitaris legendaris Guns N' Roses, Slash. Permainannya dengan gitar ini telah menginspirasi banyak musisi di seluruh dunia.</p>
+                  </div>
+                </div>
+        
+                <div class="product">
+                    <img src="img/bass/bass2.jpg" alt="Basss">
+                    <h3>Ibanez GSRM 4-String Bass Guitar</h3>
+                    <p>Rp. 20.500.000</p>
+                    <a class="order" href="transaksi.html?product=Ibanez%20GSRM%204-String%20Bass%20Guitar&price=20500000">🛒 Pesan Sekarang</a>
+                    <button class="btn-sejarah" onclick="openModal('modalBass')">Detail Produk</button>
+                </div>
+                <!-- Modal untuk Bass -->
+                <div id="modalBass" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modalBass')">&times;</span>
+                    <h2>Tentang Produk ini</h2>
+                    <img src="img/bass/bass2.jpg" alt="Basss">
+                    <p>Ukuran sempurna untuk rocker berukuran pint Anda, gitar bass elektrik Ibanez miKro GSRM20 ini memberi Anda low end yang bagus dengan ukuran dan berat minimal. Saat Anda mengambil miKro GSRM20 ini, Anda akan menemukan bahwa bodi bass yang ringkas dan neck yang lebih kecil memberi Anda kenyamanan dan kemampuan bermain yang luar biasa, terutama jika Anda memiliki lengan yang lebih pendek atau tangan yang lebih kecil. Dengan miKro GSRM20 ini, Anda mendapatkan yang terbaik dari kedua dunia - satu pickup J-style dan satu P-style - menghadirkan kedua nada yang dapat dikenali ke ujung jari Anda. Dengan gitar bass elektrik Ibanez miKro GSRM20 ini di tangan Anda, Anda akan berdebar sepanjang malam.</p>
+                  </div>
+                </div>
+        
+                <div class="product">
+                  <img src="img/drum/drum1.jpg" alt="Drum">
+                  <h3>TAMA WBS52RZS-MBI Starclassic Walnut/Birch 5-Piece Drum Shell Kit</h3>
+                  <p>Rp. 49.980.000</p>
+                  <a class="order" href="transaksi.html?product=TAMA%20WBS52RZS-MBI%20Starclassic%20Walnut/Birch%205-Piece%20Drum%20Shell%20Kit,%20Molten%20Blue%20Ice%20Fade&price=49980000">🛒 Pesan Sekarang</a>
+                  <button class="btn-sejarah" onclick="openModal('modalDrum')">Detail Produk</button>
+                </div>
+                <!-- Modal untuk Drum -->
+                <div id="modalDrum" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modalDrum')">&times;</span>
+                    <h2>Tentang Produk ini</h2>
+                    <img src="img/drum/drum1.jpg" alt="Drum">
+                    <p>Evolusi Starclassic dari maple, birch, bubinga, birch/bubinga terus berlanjut, dan sekarang - setelah analisis intensif, penelitian ketat, pengembangan, dan pengujian produk - TAMA telah sampai pada pengembangan modern Starclassic terbaru, Starclassic Walnut/Birch.
+        
+                      TAMA menemukan rasio sempurna antara kenari dan birch yang menghasilkan kualitas unggul dari kehangatan frekuensi rendah hingga menengah yang secara sempurna melengkapi serangan jelas dan proyeksi frekuensi lebih tinggi dari birch. Suaranya familiar, namun berbeda dengan suara Tama di masa lalu.
+                      
+                      Seri Starclassic terus menjadi representasi dari hasrat, kebijaksanaan, dan upaya kolektif kami dalam membuat drum untuk menghasilkan suara yang halus dan berbeda. Starclassic Walnut/Birch mendefinisikan komitmen TAMA untuk mengembangkan suara drum mereka dan menginspirasi drummer kontemporer.</p>
+                  </div>
+                </div>
+        
+              <div class="product">
+                <img src="img/piano/piano1.jpg" alt="Piano">
+                <h3>YAMAHA P-225 88-key Digital Piano, <br> Black</h3>
+                <p>Rp. 10.283.300</p>
+                <a class="order" href="transaksi.html?product=YAMAHA%20P-225%2088-key%20Digital%20Piano,%20Black&price=10283300">🛒 Pesan Sekarang</a>
+                <button class="btn-sejarah" onclick="openModal('modalPiano')"> Detail Produk</button>
+              </div>
+              <!-- Modal untuk Piano -->
+              <div id="modalPiano" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modalPiano')">&times;</span>
+                  <h2>Tentang Produk ini</h2>
+                  <img src="img/piano/piano1.jpg" alt="Piano">
+                  <p>Piano digital Seri P Yamaha disukai oleh pemain piano di seluruh dunia yang menginginkan nuansa nyaman piano akustik pada instrumen dengan ukuran dan berat yang lebih mudah diatur.
+        
+                    Dibandingkan pendahulunya, P-225 memiliki desain bodi yang jauh lebih pendek dan tipis dengan gaya kompak. Model ini terlihat cantik dari sudut mana pun dan menyatu dengan baik dengan ruangan mana pun. Untuk mencapai sasis produk yang lebih kecil, kami mengembangkan keyboard GHC (Graded Hammer Compact) baru (88 tuts), yang dibuat dengan standar tanpa kompromi dan menawarkan nuansa bermain seperti piano akustik dengan bobot yang sama seperti tuts GHS (Graded Hammer Standard) yang digunakan pada model sebelumnya di Seri P.
+                    
+                    P-225 menampilkan suara grand piano konser utama Yamaha, CFX, dan model ini menggunakan teknologi Virtual Resonance Modeling (VRM) Lite untuk meniru perubahan nada ekspresif momen demi momen yang terjadi pada grand piano sesungguhnya.
+                    
+                    Apakah Anda seorang pemain piano tingkat lanjut atau pemula yang serius dengan keinginan untuk belajar bermain, P-225 adalah pilihan yang sempurna.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </section>  
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Tentang Kami</h3>
+          <p>Kami menyediakan alat musik professional berkualitas tinggi untuk berbagai kebutuhan.</p>
+        </div>
+        <div class="footer-link">
+          <h3>Tautan</h3>
+          <ul>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="https://wa.me/087818358048">Kontak</a></li>
+            <li><a href="https://maps.app.goo.gl/wz9ysvjFUH3mmgqK8">Lokasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Kontak Kami</h3>
+          <p>Email   : dimasarifmaryadi01@gmail.com</p>
+          <p>Telepon : +6287818358048</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/dimas.arif.351756/" class="icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/dimasmrydi/" class="icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@dimasmrydi" class="icon">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+        <p>&copy; 2024 Dims Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<script src="script.js" defer></script>
